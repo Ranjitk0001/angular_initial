@@ -1,6 +1,6 @@
 export class Todo{
     sno :number=0; 
     title:string='';
-    desc:string='';
+    descr:string='';
     active:boolean= false;
 }

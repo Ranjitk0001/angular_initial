@@ -10,7 +10,7 @@ import { Todo } from '../../Todo';
 })
 export class TodoItemComponent implements OnInit{
 
-  @Input() tododata!:Todo;
+  @Input() todo!:Todo;
   @Output() todoDelete: EventEmitter<Todo> = new EventEmitter<Todo>();
 
   constructor(){
@@ -21,8 +21,8 @@ export class TodoItemComponent implements OnInit{
       
   }
 
-  onClick(tododata:Todo  ){
-    this.todoDelete.emit(tododata);
+  onClick(todo:Todo  ){
+    this.todoDelete.emit(todo);
     console.log("OnClick has trigger")
    
   }

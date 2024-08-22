@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TodoComponent } from './MyComponent/todos/todo.component';
+import { TodoComponent } from './MyComponent/todo/todo.component';
 
 
 @Component({
