@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Todo } from '../../Todo';
 
 @Component({
@@ -11,6 +11,8 @@ import { Todo } from '../../Todo';
 export class TodoItemComponent implements OnInit{
 
   @Input() tododata!:Todo;
+  @Output() todoDelete: EventEmitter<Todo> = new EventEmitter<Todo>();
+
   constructor(){
 
   }
@@ -19,5 +21,9 @@ export class TodoItemComponent implements OnInit{
       
   }
 
- 
+  onClick(tododata:Todo  ){
+    this.todoDelete.emit(tododata);
+    console.log("OnClick has trigger")
+   
+  }
 }
