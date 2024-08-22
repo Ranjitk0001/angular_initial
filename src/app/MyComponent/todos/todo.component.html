@@ -1,0 +1,17 @@
+<!-- <p>todo works!</p> -->
+
+<!-- <div *ngFor="let todo of todos">
+    <li>{{todo.sno}} -  {{todo.title}} -   {{todo.desc}} -  {{todo.active}}</li>
+   // <li>{{todo.sno}}</li>
+    //<li>{{todo.title}}</li>
+    //<li>{{todo.desc}}</li>
+    //<li>{{todo.active}}</li>
+    
+   </div> -->
+
+   
+   <div *ngFor="let todo of todos">
+    <app-todo-item [tododata]="todo"></app-todo-item>
+    
+    
+   </div>
