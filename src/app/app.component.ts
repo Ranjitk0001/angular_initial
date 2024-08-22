@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { TodoComponent } from './MyComponent/todo/todo.component';
 
 
@@ -7,7 +7,7 @@ import { TodoComponent } from './MyComponent/todo/todo.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
-   
+       RouterLink,
     TodoComponent,
 
   ],
